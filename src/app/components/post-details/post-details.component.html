@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="row">
+        <div *ngIf="post" class="col">
+            <app-post [post]="post"></app-post>
+        </div>
+        <div class="col alert alert-danger" *ngIf="!post">post not found</div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<!-- contain list of posts -->
+<div class="container">
+    <div class="row">
+    </div>
+    <div class="row" *ngIf="posts">
+        <div class="col-sm-12 col-md-6 col-lg-4 my-3" *ngFor="let post of posts">
+            <app-post [post] = "post"></app-post>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="!posts">
+        <img src="https://i.pinimg.com/originals/f9/41/ae/f941ae9d16fd7d2957eea6e5b1100d1e.gif" alt="">
+    </div>
+</div>

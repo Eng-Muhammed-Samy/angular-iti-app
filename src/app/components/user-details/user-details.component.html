@@ -1,0 +1,13 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <app-user [user]="user"></app-user>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 my-3" *ngFor="let post of userPosts">
+            <app-post [post] = "post"></app-post>
+        </div>
+    </div>
+</div>
